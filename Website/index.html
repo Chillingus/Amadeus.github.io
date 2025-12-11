@@ -1,130 +1,133 @@
-// https://eveboard.com/ranks
-
 <!DOCTYPE html>
-<html lang='en' class=''>
+<html lang="en">
 <head>
-<meta charset='UTF-8'>
-<title>Error 404</title>
-
-<meta name="robots" content="noindex">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-<style>
- @import 'https://fonts.googleapis.com/css?family=Inconsolata';
-html {
- min-height: 100%;
-}
-
-body {
- box-sizing: border-box;
- height: 100%;
- background-color: #000000;
- background-image: radial-gradient(#11581E, #041607);
- background-repeat: no-repeat;
- background-size: cover;
- font-family: "Inconsolata", Helvetica, sans-serif;
- font-size: 1.5rem;
- color: rgba(128, 255, 128, 0.8);
- text-shadow: 0 0 1ex #33ff33, 0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-.noise {
- pointer-events: none;
- position: absolute;
- width: 100%;
- height: 100%;
- background-repeat: no-repeat;
- background-size: cover;
- z-index: -1;
- opacity: 0.02;
-}
-
-.overlay {
- pointer-events: none;
- position: absolute;
- width: 100%;
- height: 100%;
- background-size: auto 4px;
- z-index: 1;
-}
-
-.overlay::before {
- content: "";
- pointer-events: none;
- position: absolute;
- display: block;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- width: 100%;
- height: 100%;
- background-repeat: no-repeat;
- -webkit-animation: scan 7.5s linear 0s infinite;
- animation: scan 7.5s linear 0s infinite;
-}
-
-.terminal {
- box-sizing: inherit;
- position: absolute;
- height: 100%;
- width: 1000px;
- max-width: 100%;
- padding: 4rem;
- text-transform: uppercase;
-}
-
-.output {
- color: rgba(128, 255, 128, 0.8);
- text-shadow: 0 0 1px rgba(51, 255, 51, 0.4), 0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-.output::before {
- content: "> ";
-}
-
-/*
-.input {
- color: rgba(192, 255, 192, 0.8);
- text-shadow:
- 0 0 1px rgba(51, 255, 51, 0.4),
- 0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-.input::before {
- content: "$ ";
-}
-*/
-a {
- color: #fff;
- text-decoration: none;
-}
-
-a::before {
- content: "[";
-}
-
-a::after {
- content: "]";
-}
-
-.errorcode {
- color: white;
-}
- </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        /* Basic CSS for the portfolio structure */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
- <div class="noise"></div>
-<div class="overlay"></div>
-<div class="terminal">
- <h1>Error <span class="errorcode">404</span></h1>
- <p class="output">The page you are looking for might have been removed, had its name changed or is temporarily unavailable.</p>
- <p class="output">Please try to go back or return to the homepage.</p>
- <p class="output">Good luck.</p>
-</div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8ed3e6adca78ed29","version":"2024.10.5","r":1,"token":"1b1702d94e814b1b802a2d86dbee0bb9","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+    <header>
+        <h1>[Your Name]</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a passionate [Your Title/Role] specializing in [Key Area, e.g., web development, 3D modeling, data science]. I enjoy turning complex problems into simple, beautiful, and intuitive designs and solutions.</p>
+            <p>Remember that time you modeled something in FreeCAD, exported it as an .obj, and then put it into Blender? That kind of cross-tool workflow is exactly what I love to tackle!</p> 
+            </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+
+            <div class="project-card">
+                <h3>Project Title One (e.g., E-commerce Dashboard)</h3>
+                <p>A brief description of the project. Mention the goal, your role, and the technologies used (e.g., React, Node.js, Python).</p>
+                <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+                <a href="#" target="_blank">View Live</a> | <a href="#" target="_blank">GitHub Repo</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Project Title Two (e.g., Recipe Finder App)</h3>
+                <p>A brief description of the project. Highlight the challenge and how you solved it.</p>
+                <p><strong>Tech Used:</strong> Python, Flask, SQLite</p>
+                <a href="#" target="_blank">View Live</a> | <a href="#" target="_blank">GitHub Repo</a>
+            </div>
+
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>
+                <strong>Programming Languages:</strong> Python, JavaScript, HTML, CSS<br>
+                <strong>Frameworks/Libraries:</strong> React, Node.js, Flask, Django<br>
+                <strong>Tools:</strong> Git, Docker, FreeCAD, Blender<br>
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to discuss collaboration or just to say hello!</p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourname</a></p>
+            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+
 </body>
-
 </html>
