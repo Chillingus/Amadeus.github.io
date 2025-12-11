@@ -1,5 +1,3 @@
 # Amadeus
 
----
-
 Personal Website
