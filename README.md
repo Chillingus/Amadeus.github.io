@@ -1,2 +1,0 @@
-Amadeus
-Personal Webpage
