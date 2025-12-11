@@ -1,3 +1,0 @@
-# Amadeus.github.io
-Personal Webpage.
-readme file should not show up on page...
