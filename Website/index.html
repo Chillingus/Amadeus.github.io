@@ -1,128 +1,97 @@
 <!DOCTYPE html>
-<html lang='en' class=''>
+<html lang="en">
 <head>
-<meta charset='UTF-8'>
-<title>Error 404</title>
-
-<meta name="robots" content="noindex">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-<style>
- @import 'https://fonts.googleapis.com/css?family=Inconsolata';
-html {
- min-height: 100%;
-}
-
-body {
- box-sizing: border-box;
- height: 100%;
- background-color: #000000;
- background-image: radial-gradient(#11581E, #041607);
- background-repeat: no-repeat;
- background-size: cover;
- font-family: "Inconsolata", Helvetica, sans-serif;
- font-size: 1.5rem;
- color: rgba(128, 255, 128, 0.8);
- text-shadow: 0 0 1ex #33ff33, 0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-.noise {
- pointer-events: none;
- position: absolute;
- width: 100%;
- height: 100%;
- background-repeat: no-repeat;
- background-size: cover;
- z-index: -1;
- opacity: 0.02;
-}
-
-.overlay {
- pointer-events: none;
- position: absolute;
- width: 100%;
- height: 100%;
- background-size: auto 4px;
- z-index: 1;
-}
-
-.overlay::before {
- content: "";
- pointer-events: none;
- position: absolute;
- display: block;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- width: 100%;
- height: 100%;
- background-repeat: no-repeat;
- -webkit-animation: scan 7.5s linear 0s infinite;
- animation: scan 7.5s linear 0s infinite;
-}
-
-.terminal {
- box-sizing: inherit;
- position: absolute;
- height: 100%;
- width: 1000px;
- max-width: 100%;
- padding: 4rem;
- text-transform: uppercase;
-}
-
-.output {
- color: rgba(128, 255, 128, 0.8);
- text-shadow: 0 0 1px rgba(51, 255, 51, 0.4), 0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-.output::before {
- content: "> ";
-}
-
-/*
-.input {
- color: rgba(192, 255, 192, 0.8);
- text-shadow:
- 0 0 1px rgba(51, 255, 51, 0.4),
- 0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-.input::before {
- content: "$ ";
-}
-*/
-a {
- color: #fff;
- text-decoration: none;
-}
-
-a::before {
- content: "[";
-}
-
-a::after {
- content: "]";
-}
-
-.errorcode {
- color: white;
-}
- </style>
+    <meta charset="UTF-8" />
+    <title>Hello world!</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400&display=swap">
 </head>
-
 <body>
- <div class="noise"></div>
-<div class="overlay"></div>
-<div class="terminal">
- <h1>Error <span class="errorcode">404</span></h1>
- <p class="output">The page you are looking for might have been removed, had its name changed or is temporarily unavailable.</p>
- <p class="output">Please try to go back or return to the homepage.</p>
- <p class="output">Good luck.</p>
-</div>
+    <nav>
+        <span class="nav-logo" ><a href="">J</a></span>
+        <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Info</a></li>
+        </ul>
+    </nav>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8ed3e6adca78ed29","version":"2024.10.5","r":1,"token":"1b1702d94e814b1b802a2d86dbee0bb9","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+    <div class="page">
+        <h1>Amadeus</h1>
+        <p class="snippet" >Whatever goes here...</p>
+
+
+        <div class="intro-wrap">
+            <div class="status-update-block">
+                <div class="status-update-title">
+                    2026 update
+                    <br>
+                </div>
+                <div class="status-update-text">
+                    Yenuinely gotta start adding shit to this (not gonna happen for a while)
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="cards-grid">
+            <div class="section-card">
+                <h2>Projects</h2>
+                <p>Where all the shit goes. Link work here — side projects, experiments, anything worth showing.</p>
+            </div>
+            <div class="section-card">
+                <h2>Information</h2>
+                <p>Where more shit goes. Bio, contact, links to elsewhere on the internet — the basics.</p>
+            </div>
+            <div class="section-card">
+                <h2>Images</h2>
+                <p>Images of Projects that are a work in progress.</p>
+            </div>
+        </div>
+
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam nulla eu placerat varius. Donec faucibus elementum arcu. Duis a lacus vulputate, pulvinar erat quis, mollis velit. Vestibulum at malesuada ante. Donec orci erat, cursus pellentesque mattis eu, laoreet eu est. Nam non erat auctor, eleifend augue et, ullamcorper dui. Nulla ut tortor lectus. Mauris nec justo vel eros tempus aliquam a eu risus. Donec eget dignissim nisl, eget laoreet ipsum. 
+            </p>
+            <p>
+                In consectetur malesuada tincidunt. Aenean gravida ante sit amet sem dignissim lacinia. Donec vitae quam risus. Praesent finibus erat sem, ac volutpat leo vulputate id. Aenean eleifend elit sed tellus laoreet sagittis. Vivamus iaculis sollicitudin tellus, ac suscipit risus. Phasellus egestas porta elit non ultrices. Curabitur id rutrum orci, in maximus mi. Curabitur ullamcorper consequat efficitur. 
+            </p>
+            <p>
+                In vehicula sapien id nibh congue tincidunt. Sed cursus nunc at nisl cursus rutrum et ac ipsum. Vestibulum feugiat a nisi ac sollicitudin. Aliquam non lacinia eros, eu porttitor leo. Sed hendrerit odio quis libero molestie, ut efficitur purus mattis. Phasellus viverra leo sem, iaculis euismod dolor posuere ac. Vestibulum in ornare odio, non rutrum sapien. 
+            </p>
+            <p>
+                Sed semper nulla a nunc mollis, et dictum orci porttitor. Proin vitae mattis massa. Maecenas consectetur aliquet urna et viverra. Proin auctor urna arcu, in fringilla lacus consequat tempus. Maecenas luctus magna urna, in rhoncus magna laoreet ut. Quisque sodales justo nibh, ac vulputate lectus interdum id. Etiam a elit eu velit placerat vehicula. Phasellus vehicula felis purus, at fermentum felis laoreet at. 
+            </p>
+            <p>
+                Integer ut scelerisque tortor. Suspendisse potenti. Vestibulum ut dolor convallis, ultrices tellus non, accumsan lorem. Mauris aliquet quam turpis, ac pellentesque magna facilisis sit amet. Sed convallis quam sed lectus cursus, sodales sodales magna maximus. Integer elit magna, auctor ac nisl egestas, pulvinar tincidunt metus. Praesent ac eros id nisl mollis tristique. Proin dictum libero ut urna porttitor, at auctor ligula pulvinar. In consectetur lobortis convallis. Pellentesque et velit elementum, elementum sem quis, eleifend nibh. Aenean pretium odio vel lorem tempor commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+            </p>
+        </div>
+
+        <div class="footer-wrap">
+            <div class="standard-container">
+                <div class="footer-top-divider">
+                    <div class="footer-divider"></div>
+                </div>
+                <a class="link-block w-inline-block w--current" href="">
+                    <h2 class="footer-title">
+                        Jaeger
+                        <br>
+                        Amadeus
+                    </h2>
+                </a>
+                <div class="footer-links">
+                    <a class="footer-item" href="https://github.com/Chillingus">Github</a>
+                    <a class="footer-item" href="">Reddit</a>
+                    <a class="footer-item" href="">Linkedin</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
